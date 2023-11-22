@@ -1,30 +1,115 @@
-/* The navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #222222;
+  color: white;
+  letter-spacing: 0.2px;
+}
+
+nav{
+  background-color: #FFFFFF;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.banner{
+  border-radius: 5px;;
+  width: 100%;
+  height: auto;
+}
+.artbox{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
+.nav-container{
+  display: flex;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container h1{
+  padding: 20px;
+  font-size: 2em;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-container-2{
+  display: flex;
+  background-color: gray;
+  color: black;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 375px){
+  .nav-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
   }
-  
-  /* Links inside the navbar */
-  .class {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+  .nav-container-2 a{
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-size: auto;
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
   }
-  
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
+}
+
+@media only screen and (min-width: 768px){
+  .nav-container img{
+    width: 5%;
+    height: 5%;
+    border-radius: 25px;
   }
   
-  /* Main content */
-  .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  .nav-container-2 a{
+    padding: 15px;
+    padding-left: 120px;
+    padding-right: 120px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-size: auto;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
   }
-  
+}
+
+
+h2{
+  font-size: 3em;
+  font-family: 'Inter', sans-serif;
+}
+header{
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Inter', sans-serif;
+  padding-top: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+p{
+  text-align: center;
+  font-size: 1.4em;
+  font-family: 'Inter', sans-serif;
+  color: #999999;
+  border-bottom: 1px solid #fff;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 40px;
+}
