@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Commission Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+        <img src="CometDragon logo image.jpg">
+      <div>
+        <h1>COMETDRAGON STUDIOS</h1>
+      </div>
+    </div>
+    <div class="nav-container-2">
+      <div>
+        <a href="index.html">Home</a>
+      </div>
+      <div>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div>
+        <a href="commission.html">Commission</a>
+      </div>
+      <div>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <form>
+    <h2>Commission Form</h2>
+    <p class="question">Please select a portrait size:</p>
+    <input type="radio" name="portrait-size">
+    <label>Headshot</label><br>
+    <input type="radio" name="portrait-size">
+    <label>Bodyshot</label><br>
+    <input type="radio" name="portrait-size">
+    <label>Fullbody</label>
+    <br> 
+    <p class="question">Please select art quality:</p>
+    <input type="radio" name="art-quality">
+    <label>Line Art</label><br>
+    <input type="radio" name="art-quality">
+    <label>Shaded Line Art</label><br>
+    <input type="radio" name="art-quality">
+    <label>Coloured</label><br>
+    <input type="radio" name="art-quality">
+    <label>Shaded Coloured</label>
+    <br> 
+    <p>Please enter some details of your commission:</p>
+    <textarea class="regtext"> </textarea><br><br>
+    
+    <button><label class="regtext" onclick="submitForm()">Submit</label></button>
+    <script>
+    function submitForm() {
+      alert("Form submitted. Thanks for the request!");
+    }
+    </script>
+  </form>
+</body>
+
+</html>
